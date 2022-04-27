@@ -1,0 +1,419 @@
+*
+    margin: 0
+    padding: 0
+    text-decoration: none
+    list-style-type: none
+
+body
+    font-family: 'Lato'
+
+$site_col: #F16D7F
+
+.container1
+    width: 1140px
+    margin: 0 auto
+
+.header
+    width: 100%
+    background-color: #222222
+
+.menu
+    height: 75px
+    display: flex
+    justify-content: space-between
+    &__left
+        display: flex
+        align-items: center
+    &__left-ul
+        display: flex
+        align-items: center
+    &__left-li
+        padding: 25px
+    &__right
+        display: flex
+        align-items: center
+    &__right-ul
+        display: flex
+        align-items: center
+    &__right-li
+        padding: 25px
+
+.menu__right-li
+    padding: 25px
+    position: relative
+
+.mega__box
+    z-index: 1
+    display: none
+    margin-top: 24px
+    position: absolute
+    padding: 35px
+    background-color: #fff
+    min-height: 695px
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+
+.mega__heading
+    margin-bottom: 24px
+    width: 192px
+    font-weight: 700
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+    text-transform: uppercase
+
+.mega__item
+    padding-bottom: 20px
+
+.mega__mini__heading
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    text-transform: uppercase
+    color: #E05C6E
+
+.mega__link
+    padding-left: 20px
+    display: block
+    padding-top: 12px
+    font-weight: 400
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+    text-decoration: none
+
+    &:hover
+        color: #E05C6E
+
+.menu__right-li:hover .mega__box
+    display: block
+
+.top-info
+    width: 100%
+    background-color: #F1E4E6
+
+.banner
+    height: 764px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__line
+        height: 92px
+        width: 12px
+        background-color: #F16D7F
+        margin-right: 16px
+    &__info
+        min-height: 100px
+        width: 500px
+        display: flex
+        align-items: center
+    &__txt
+    &__heading
+        text-transform: uppercase
+        font-weight: 900
+        font-size: 48px
+        line-height: 50px
+        color: #222222
+    &__text
+        text-transform: uppercase
+        font-weight: 900
+        font-size: 32px
+        line-height: 50px
+        color: #222222
+    &__span
+        color: #F16D7F
+
+.sale
+    margin-top: 65px
+
+.sale-content
+    &__top
+        display: flex
+        justify-content: space-between
+    &__botom
+        margin-top: 30px
+    &__link
+        display: block
+        text-align: center
+        width: 360px
+        height: 260px
+    &__link1
+        background-image: url(img/sale1.jpg)
+    &__link2
+        background-image: url(img/sale2.jpg)
+    &__link3
+        background-image: url(img/sale3.jpg)
+    &__link4
+        background-image: url(img/sale4.jpg)
+        width: 100%
+        height: 180px
+    &__top-text
+        text-transform: uppercase
+        padding-top: 105px
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+    &__botom-text
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 24px
+        line-height: 28px
+        color: $site_col
+    &__top-text4
+        padding-top: 65px
+
+.my-content
+    margin-top: 96px
+    &__box
+        text-align: center
+    &__heading
+        font-weight: 400
+        font-size: 30px
+        line-height: 36px
+        color: #222222
+    &__text
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #9F9F9F
+    &__button
+        margin-bottom: 95px
+        display: flex
+        justify-content: center
+        margin-top: 50px
+    &__button-link
+        text-align: center
+        padding: 14px 38px
+        border: 1px solid #F16D7F
+        display: block
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #F16D7F
+    &__button-link:hover
+        background-color: #F16D7F
+        color: #fff
+
+.card-box
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 48px
+    &__card
+        width: 360px
+        position: relative
+        margin-bottom: 30px
+    &__card-link
+        display: block
+    &__card-link-img
+        width: 100%
+        vertical-align: bottom
+    &__card:hover .card-box__card-link-img
+        filter: brightness(35%)
+    &__card-link-info
+        background-color: #F8F8F8
+        text-align: left
+        padding: 25px 16px 20px
+    &__card-link-heading
+        font-weight: 400
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+    &__card-link-text
+        padding-top: 12px
+        padding-bottom: 18px
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+    &__card-link-price
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #F16D7F
+    &__basket
+        display: none
+        width: 100%
+        justify-content: center
+        position: absolute
+        top: 188px
+        pointer-events: none
+    &__basket-link
+        text-decoration: none
+        display: flex
+        align-items: center
+        padding: 8px
+        border: 1px solid #fff
+        pointer-events: all
+    &__basket-text
+        margin-bottom: 0
+        padding-left: 12px
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+    &__card:hover &__basket
+        display: flex
+
+.promotion
+    height: 340px
+    width: 100%
+    background-color: #222224
+    &__box
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__item
+        padding-top: 103px
+        width: 360px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+    &__heading
+        padding-top: 28px
+        padding-bottom: 16px
+        font-weight: 400
+        font-size: 19.96px
+        line-height: 24px
+        color: #FBFBFB
+    &__text
+        font-weight: 300
+        font-size: 13.972px
+        line-height: 17px
+        color: #FBFBFB
+
+.footer
+    &__top
+        width: 100%
+        background-image: url(img/footer__bg.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: bottom
+    &__top-box
+        display: flex
+        justify-content: space-between
+        padding-top: 90px
+        padding-bottom: 130px
+        align-items: center
+    &__top-info
+        align-items: center
+        text-align: center
+        width: 360px
+    &__top-img
+        margin-bottom: 30px
+    &__top-info-text
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        color: #222224
+    &__top-form-heading
+        font-weight: 700
+        font-size: 24px
+        line-height: 167.2%
+        text-align: center
+        color: #222224
+    &__top-form-box
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__form
+        display: flex
+        margin-top: 32px
+    &__top-inp
+        width: 325px
+        height: 50px
+        border-radius: 25px 0 0 25px
+        background: #E1E1E1
+        text-align: center
+        border: none
+    &__button
+        width: 100px
+        height: 50px
+        border-radius: 0 25px 25px 0
+        background: #E05C6E
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        color: #FFFFFF
+        border: none
+    &__botom
+        height: 80px
+        width: 100%
+        background-color: #222224
+    &__botom-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 24px
+        padding-bottom: 24px
+    &__botom-text
+        margin-bottom: 0
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #FBFBFB
+    &__botom-links
+        display: flex
+
+.fa-facebook-f
+    margin-right: 8px
+    box-sizing: border-box
+    display: block
+    width: 32px
+    height: 32px
+    background-color: #fff
+    text-align: center
+    padding-top: 8px
+    color: #000
+    &:hover
+        background-color: #E05C6E
+        color: #fff
+
+.fa-instagram
+    margin-right: 8px
+    box-sizing: border-box
+    display: block
+    width: 32px
+    height: 32px
+    background-color: #fff
+    text-align: center
+    padding-top: 8px
+    color: #000
+    &:hover
+        background-color: #E05C6E
+        color: #fff
+
+.fa-pinterest-p
+    margin-right: 8px
+    box-sizing: border-box
+    display: block
+    width: 32px
+    height: 32px
+    background-color: #fff
+    text-align: center
+    padding-top: 8px
+    color: #000
+    &:hover
+        background-color: #E05C6E
+        color: #fff
+
+.fa-twitter
+    margin-right: 8px
+    box-sizing: border-box
+    display: block
+    width: 32px
+    height: 32px
+    background-color: #fff
+    text-align: center
+    padding-top: 8px
+    color: #000
+    &:hover
+        background-color: #E05C6E
+        color: #fff
+
+@import "product"
+
+@import "catalog"
