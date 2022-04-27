@@ -1,0 +1,90 @@
+a
+    text-decoration: none
+
+p
+    margin: 0
+    padding: 0
+
+ul
+    margin: 0
+    padding: 0
+
+.filter1
+    display: flex
+    justify-content: start
+    align-items: center
+    &__li
+        padding: 5px
+        position: relative
+    &__li:hover .filter1__box
+        display: block
+    &__box
+        display: none
+        margin-top: -33px
+        margin-left: -16px
+        z-index: 1
+        position: absolute
+        width: 360px
+        background-color: #fff
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+    &__link
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    &__heading
+        margin-top: 13px
+        margin-left: 16px
+        text-align: left
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #EF5B70
+    &__items
+        padding: 17px
+    &__acco-button
+        padding: 18px 17px 0 0
+        align-items: center
+        border-bottom: 1px solid #EBEBEB
+    &__line
+        margin-right: 11px
+        width: 5px
+        height: 37px
+        background-color: #F26376
+    &__text
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+    &__acco-link
+        text-align: left
+        padding-bottom: 11px
+        padding-left: 12px
+        display: block
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+    &__acco-link:hover
+        color: #F26376
+
+.accordion-button:not(.collapsed)
+    color: #F26376
+
+.accordion-button::after
+    background-image: none
+.accordion-button:not(.collapsed)::after
+    background-image: none
+
+
+.olo
+    display: flex
+    height: 50px
+.my-accord
+    align-self: center
+    &__box
+        display: flex
+        margin: 0
+        align-items: center
