@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/0feafb7b9f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container1">
+            <div class="menu">
+                <div class="menu__left">
+                    <ul class="menu__left-ul">
+                        <li class="menu__left-li">
+                            <a href="index.html" class="menu__link"><img src="img/logo.svg" alt="logo"></a>
+                        </li>
+                        <li class="menu__left-li">
+                            <a href="#" class="menu__link"><img src="img/search.svg" alt="search"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu__right">
+                    <ul class="menu__right-ul">
+                        <li class="menu__right-li"><a href="#" class="menu__link"><img src="img/menu.svg"
+                                    alt="menu"></a>
+                            <div class="mega__box">
+                                <h4 class="mega__heading">MENU</h3>
+                                    <div class="mega__item">
+                                        <h3 class="mega__mini__heading">MAN</h3>
+                                        <a href="#" class="mega__link">Accessories</a>
+                                        <a href="#" class="mega__link">Bags</a>
+                                        <a href="#" class="mega__link">Denim</a>
+                                        <a href="#" class="mega__link">T-Shirts</a>
+                                    </div>
+                                    <div class="mega__item">
+                                        <h3 class="mega__mini__heading">WOMAN</h3>
+                                        <a href="#" class="mega__link">Accessories</a>
+                                        <a href="#" class="mega__link">Jackets & Coats</a>
+                                        <a href="#" class="mega__link">Polos</a>
+                                        <a href="#" class="mega__link">T-Shirts</a>
+                                        <a href="#" class="mega__link">Shirts</a>
+                                    </div>
+                                    <div class="mega__item">
+                                        <h3 class="mega__mini__heading">KIDS</h3>
+                                        <a href="#" class="mega__link">Accessories</a>
+                                        <a href="#" class="mega__link">Jackets & Coats</a>
+                                        <a href="#" class="mega__link">Polos</a>
+                                        <a href="#" class="mega__link">T-Shirts</a>
+                                        <a href="#" class="mega__link">Shirts</a>
+                                        <a href="#" class="mega__link">Bags</a>
+                                    </div>
+                            </div>
+                        </li>
+                        <li class="menu__right-li">
+                            <a href="registration.html" class="menu__link"><img src="img/profile.svg" alt="profile"></a>
+                        </li>
+                        <li class="menu__right-li">
+                            <a href="cart.html" class="menu__link"><img src="img/basket.svg" alt="basket"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar1">
+        <div class="container1">
+            <div class="navbar1__box">
+                <h1 class="navbar1__heading">REGISTRATION</h1>
+            </div>
+        </div>
+    </div>
+    <div class="cart-content">
+        <div class="container1">
+            <div class="product-box">
+                <div class="product-box__product">
+                    <a href="#" class="product-box__link">
+                        <img class="product-box__link-img" src="img/cart1.jpg" alt="cart">
+                        <div class="product-box__link-info">
+                            <div class="product-box__link-info-box">
+                                <h3 class="product-box__link-heading">MANGO PEOPLE T-SHIRT</h3>
+                                <p class="product-box__link-text">Price: <span
+                                        class="product-box__link-span">$300</span></p>
+                                <p class="product-box__link-text">Color: Red</p>
+                                <p class="product-box__link-text">Size: Xl</p>
+                                <label for="number" class="product-box__link-label">Quantity: </label>
+                                <input class="product-box__link-input" id="number" type="number" min="1" value="1">
+                            </div>
+                            <i class="fa fa-solid fa-xmark product-box__link-info-fa"></i>
+                        </div>
+                    </a>
+                    <a href="#" class="product-box__link">
+                        <img class="product-box__link-img" src="img/cart2.jpg" alt="cart">
+                        <div class="product-box__link-info">
+                            <div class="product-box__link-info-box">
+                                <h3 class="product-box__link-heading">MANGO PEOPLE T-SHIRT</h3>
+                                <p class="product-box__link-text">Price: <span
+                                        class="product-box__link-span">$300</span></p>
+                                <p class="product-box__link-text">Color: Red</p>
+                                <p class="product-box__link-text">Size: Xl</p>
+                                <label for="number" class="product-box__link-label">Quantity: </label>
+                                <input class="product-box__link-input" id="number" type="number" min="1" value="1">
+                            </div>
+                            <i class="fa fa-solid fa-xmark product-box__link-info-fa"></i>
+                        </div>
+                    </a>
+                    <div class="product-box__product-button-box">
+                        <a href="#" class="product-box__product-button">CLEAR SHOPPING CART</a>
+                        <a href="#" class="product-box__product-button">CONTINUE SHOPPING</a>
+                    </div>
+                </div>
+                <div class="product-box__shipping">
+                    <form action="#" class="product-box__shipping-form">
+                        <h3 class="product-box__shipping-heading">SHIPPING ADRESS</h3>
+                        <input class="product-box__shipping-inp" type="text" required placeholder="Bangladesh"><br>
+                        <input class="product-box__shipping-inp" type="text" required placeholder="State"><br>
+                        <input class="product-box__shipping-inp" type="text" required placeholder="Postcode / Zip"><br>
+                        <a href="#" class="product-box__shipping-form-button">GET A QUOTE</a>
+                    </form>
+                    <div class="product-box__shipping-check">
+                        <div class="product-box__shipping-check-top">
+                            <p class="product-box__shipping-check-text1">SUB TOTAL $900</p>
+                            <p class="product-box__shipping-check-text2">GRAND TOTAL <span class="product-box__shipping-check-span">$900</span></p>
+                        </div>
+                        <a href="#" class="product-box__shipping-check-button">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__top">
+            <div class="container1">
+                <div class="footer__top-box">
+                    <div class="footer__top-info">
+                        <img src="img/footer__info.png" alt="face" class="footer__top-img">
+                        <p class="footer__top-info-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+                            pulvinar purus condimentum“</p>
+                    </div>
+                    <div class="footer__top-form-box">
+                        <h4 class="footer__top-form-heading">SUBSCRIBE</h4>
+                        <p class="footer__top-form-text">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <form action="#" class="footer__form">
+                            <input class="footer__top-inp" type="email" placeholder="Enter Your Email">
+                            <button class="footer__button" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__botom">
+            <div class="container1">
+                <div class="footer__botom-box">
+                    <p class="footer__botom-text">© 2021 Brand All Rights Reserved.</p>
+                    <div class="footer__botom-links">
+                        <a href="#" class="footer__botom-link">
+                            <i class="fa fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__botom-link">
+                            <i class="fa fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__botom-link">
+                            <i class="fa fa-brands fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="footer__botom-link">
+                            <i class="fa fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

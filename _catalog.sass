@@ -1,0 +1,138 @@
+.my-content-catalog
+    margin-top: 51px
+
+.olo
+    display: flex
+    justify-content: space-between
+    height: 50px
+
+.filter1
+    display: flex
+    align-items: center
+    &__li
+        padding: 5px
+        position: relative
+    &__li:hover .filter1__box
+        display: block
+    &__box
+        display: none
+        margin-top: -32px
+        margin-left: -16px
+        z-index: 1
+        position: absolute
+        width: 360px
+        background-color: #fff
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+    &__link
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    &__heading
+        margin-top: 13px
+        margin-left: 16px
+        text-align: left
+        text-transform: uppercase
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #EF5B70
+    &__items
+        padding: 17px
+    &__acco-header
+        margin-bottom: 0
+    &__acco-button
+        padding: 18px 0px 0 0
+        align-items: center
+        border-bottom: 1px solid #EBEBEB
+    &__line
+        margin-right: 11px
+        width: 5px
+        height: 37px
+        background-color: #F26376
+    &__text
+        text-transform: uppercase
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+    &__acco-link
+        text-align: left
+        padding-bottom: 11px
+        padding-left: 12px
+        display: block
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+    &__acco-link:hover
+        color: #F26376
+
+.accordion-button:not(.collapsed)
+    background-color: #fff
+    color: #F26376
+
+.accordion-button:focus
+    border-color: #fff
+    box-shadow: none
+
+.accordion-button::after
+    background-image: none
+.accordion-button:not(.collapsed)::after
+    background-image: none
+
+.sorting
+    z-index: 1
+    display: flex
+    margin-top: 10px
+    &__item
+        margin-right: 27px
+    &__item:last-of-type
+        margin-right: 0
+    &__name
+        display: flex
+        padding: 5px
+    &__name-icon
+        color: #6F6E6E
+    &__name-text
+        margin-right: 10px
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+    &__box
+        box-shadow: 0px 0px 5px #e5e5e5
+        background-color: #fff
+    &__box-item
+        padding: 5px 10px
+        font-weight: 400
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+    &__box-label
+        align-items: center
+    &__box-input
+        margin-right: 10px
+
+.sorting__item[open] .sorting__name-icon
+    transform: rotate(180deg)
+
+.pagi
+    display: flex
+    justify-content: center
+    margin-bottom: 96px
+    &__ul
+        display: flex
+        border: 1px solid #EBEBEB
+        border-radius: 5px
+        padding: 15px
+    &__li
+    &__link
+        padding: 8px
+        color: #EBEBEB
+    &__link-arrow
+        color: #000
+    &__link-1
+        color: #EF5B70
+    &__link:hover
+        color: #EF5B70
