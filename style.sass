@@ -4,13 +4,25 @@
     text-decoration: none
     list-style-type: none
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+    margin: 0
+    padding: 0
+a
+    text-decoration: none
+p
+    margin: 0
+    padding: 0
+ul
+    margin: 0
+    padding: 0
+
 body
     font-family: 'Lato'
 
 $site_col: #F16D7F
 
 .container1
-    width: 1140px
+    max-width: 1140px
     margin: 0 auto
 
 .header
@@ -136,6 +148,8 @@ $site_col: #F16D7F
         text-align: center
         width: 360px
         height: 260px
+    &__link:hover
+        transform: scale(1.1)
     &__link1
         background-image: url(img/sale1.jpg)
     &__link2
@@ -153,6 +167,8 @@ $site_col: #F16D7F
         font-size: 16px
         line-height: 19px
         color: #FFFFFF
+    &__top-text:hover
+
     &__botom-text
         text-transform: uppercase
         font-weight: 400
@@ -177,10 +193,10 @@ $site_col: #F16D7F
         line-height: 17px
         color: #9F9F9F
     &__button
+        margin-top: 50px
         margin-bottom: 95px
         display: flex
         justify-content: center
-        margin-top: 50px
     &__button-link
         text-align: center
         padding: 14px 38px
@@ -339,6 +355,10 @@ $site_col: #F16D7F
         text-align: center
         color: #FFFFFF
         border: none
+    &__button:hover
+        border: 1px solid #E05C6E
+        background: #fff
+        color: #E05C6E
     &__botom
         height: 80px
         width: 100%
@@ -417,3 +437,120 @@ $site_col: #F16D7F
 @import "product"
 
 @import "catalog"
+
+@import "registration"
+
+@import "cart"
+
+@media (max-width: 1024px)
+    .container1
+        padding-right: 17px
+        padding-left: 17px
+
+    .banner
+        height: 367px
+        justify-content: space-around
+        &__img
+            height: 367px
+        &__info
+            width: auto
+        &__heading
+            font-size: 44px
+            line-height: 45px
+        &__text
+            font-size: 28px
+            line-height: 45px
+
+    .sale
+        margin-top: 20px
+
+    .sale-content
+        &__link
+            width: 232px
+            height: 167px
+            background-size: cover
+            background-position: bottom
+        &__link4
+            width: 100%
+            height: 116px
+        &__top-text
+            padding-top: 55px
+        &__top-text4
+            padding-top: 33px
+
+    .my-content
+        &__button
+            margin-top: 32px
+            margin-bottom: 65px
+
+    .promotion
+        height: 610px
+        &__box
+            flex-direction: column
+        &__item
+            padding-top: 48px
+
+    .footer
+        &__top-box
+            flex-direction: column
+        &__top-box
+            padding-top: 53px
+            padding-bottom: 140px
+        &__top-info
+            margin-bottom: 48px
+
+@media (max-width: 667px)
+    .menu
+        &__right-li2
+            display: none
+
+    .banner
+        &__line
+            width: 12px
+            height: 61px
+        &__img
+            display: none
+        &__info
+            min-height: auto
+            width: auto
+        &__heading
+            font-size: 38px
+            line-height: 40px
+        &__text
+            font-size: 20px
+            line-height: 28px
+
+    .sale-content
+        &__top
+            flex-direction: column
+        &__botom
+            margin-top: 0
+        &__item
+            margin-bottom: 32px
+        &__link
+            width: auto
+            height: 247px
+        &__link4
+            height: 111px
+        &__top-text
+            padding-top: 98px
+        &__top-text4
+            padding-top: 30px
+
+    .footer
+        &__top
+        &__top-inp
+            width: 246px
+            height: 46px
+        &__button
+            width: 95px
+            height: 46px
+        &__botom
+            height: 143px
+        &__botom-box
+            flex-direction: column
+        &__botom-text
+            order: 1
+        &__botom-links
+            margin-bottom: 40px
+            order: 0
